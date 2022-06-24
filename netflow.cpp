@@ -95,7 +95,7 @@ int check(const std::vector<Edge>& flowNet,
         }
 
         unsigned int countSink = 1;
-        unsigned int foundSink = 0; // FIX 
+        unsigned int foundSink = 0; 
         unsigned int sink = -1;
 
         for(unsigned int i=0; i < flowNet.size(); i++)
@@ -263,7 +263,7 @@ std::vector<Edge> solveNetworkFlow(
     std::vector<unsigned int> paths(numVertices);
 
     unsigned int countSink = 1;
-    unsigned int foundSink = 0; // FIX 
+    unsigned int foundSink = 0; 
     unsigned int sink = -1;
 
         for(unsigned int i=0; i < flowNetwork.size(); i++)
@@ -410,7 +410,7 @@ void assignCourses(
 
     for(unsigned int i =0; i < instructors.size(); i++)
     {
-        courseGraph.push_back({source, i, instructors[i].maxCourses}); //source to profs
+        courseGraph.push_back({source, i, instructors[i].maxCourses}); 
     }
 
     for(unsigned int i =0; i < instructors.size(); i++)
@@ -421,7 +421,7 @@ void assignCourses(
            {
                 if(instructors[i].preferences[j] == courses[k])
                 {
-                    courseGraph.push_back({i, k+(unsigned)instructors.size(), 1}); //from profs to classes 
+                    courseGraph.push_back({i, k+(unsigned)instructors.size(), 1});  
                 }
            }
         }  
